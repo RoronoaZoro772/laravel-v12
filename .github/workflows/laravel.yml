@@ -20,11 +20,22 @@ jobs:
         extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pgsql, pdo_pgsql, fileinfo
         coverage: none
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-    - name: Install Dependencies
+    - name: Install Composer Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+    - name: Install NPM Dependencies
+      run: npm ci
+
+    - name: Compile Assets
+      run: npm run build
 
     - name: Generate Key
       run: php artisan key:generate
