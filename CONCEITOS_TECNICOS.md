@@ -8,6 +8,7 @@ Este documento serve como um glossário técnico detalhado, explicando a funçã
 
 ### 🐳 Docker
 * **O que é:** Uma plataforma de código aberto usada para empacotar e rodar aplicativos dentro de containers isolados.
+* **Estratégia:** Utilizamos o arquivo **`compose.yaml`** (padrão moderno) para subir serviços de App, PostgreSQL e Redis.
 * **Para que serve:** Isola a aplicação e suas dependências do sistema operacional da máquina hospedeira.
 * **Por que usamos:** Elimina o clássico problema "na minha máquina funciona". Garante que o ambiente seja idêntico no computador de qualquer desenvolvedor e no servidor de produção.
 
@@ -41,15 +42,15 @@ O Laravel moderno utiliza uma stack de frontend extremamente rápida e otimizada
 * **O que é:** Uma ferramenta de build (construção) de frontend de próxima geração. Substitui o antigo Webpack (Laravel Mix).
 * **Para que serve:** Ele pega seus arquivos CSS e JS, minifica, otimiza e serve para o navegador instantaneamente.
 * **Por que usamos:** A velocidade de inicialização do servidor de desenvolvimento é quase instantânea, melhorando drasticamente a experiência de desenvolvimento (DX).
+* **Função no Projeto:** Compila o SASS do Bootstrap e o JavaScript.
 
-### 🍃 Tailwind CSS
-* **O que é:** Um framework CSS "Utility-First" (baseado em utilitários).
-* **Para que serve:** Permite construir interfaces complexas e responsivas diretamente no HTML, sem sair do arquivo Blade/View.
-* **Por que usamos:** É o padrão de mercado atual. Ele elimina a necessidade de arquivos `.css` gigantescos e difíceis de manter, além de garantir que o site final seja extremamente leve (pois remove o CSS não utilizado na hora do build).
+### 🅱️ Bootstrap 5
+* **O que é:** O framework CSS mais robusto do mercado para interfaces responsivas.
+* **Por que usamos:** Decisão de arquitetura focada em "Enterprise". O Bootstrap oferece componentes estáveis (Modais, Grids, Tabelas) ideais para painéis administrativos, com curva de aprendizado zero para a maioria dos devs.
 
-### 🎨 PostCSS
-* **O que é:** Uma ferramenta para transformar CSS com JavaScript.
-* **Para que serve:** É o "motor" que permite que o Tailwind funcione. Ele processa as regras de CSS modernas para garantir que funcionem em todos os navegadores.
+### 🌸 SASS (Syntactically Awesome Style Sheets)
+* **O que é:** Um pré-processador CSS.
+* **Uso:** O Bootstrap é importado via SASS (`@import 'bootstrap/scss/bootstrap'`), permitindo customização avançada de variáveis e temas se necessário.
 
 ---
 
