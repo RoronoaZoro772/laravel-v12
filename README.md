@@ -3,6 +3,7 @@
 # Boilerplate Profissional (Bootstrap Edition)
 
 ![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+[![Documentation](https://img.shields.io/badge/Docs-Laravel_12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/docs/12.x)
 ![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![PostgreSQL 16](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -20,6 +21,18 @@
 ## 📋 Sobre o Projeto
 
 Este repositório fornece uma fundação sólida para projetos em **Laravel 12**, já configurado com a stack clássica de mercado (**Bootstrap 5 + SASS**). Focado em qualidade, padronização e ambiente Docker robusto (Sail).
+
+---
+
+## 📚 Documentação de Referência
+
+Centralizamos aqui todos os manuais necessários para trabalhar neste projeto:
+
+* **📖 [Documentação Oficial do Laravel 12](https://laravel.com/docs/12.x)** Referência completa sobre o framework, rotas, controllers e segurança.
+
+* **📘 [Guia Técnico do Projeto](./GUIA_TECNICO.md)** Entenda as decisões de arquitetura (Bootstrap vs Tailwind, Docker no Windows).
+
+* **📙 [Conceitos Técnicos & Glossário](./CONCEITOS_TECNICOS.md)** Explicação detalhada sobre Sail, Pint, Larastan, Vite e configurações do PHP.
 
 ---
 
@@ -198,12 +211,6 @@ Tudo isso ao enviar alterações para a branch `main`.
 * **phpstan.neon** — Regras do PHPStan / Larastan
 * **pint.json** — Configurações do Laravel Pint
 * **.editorconfig** — Padronização entre editores
-
----
-
-## 📚 Documentação Adicional
-Quer entender profundamente as ferramentas usadas neste projeto?  
-Leia a [Documentação de Conceitos Técnicos](./CONCEITOS_TECNICOS.md).
 
 ---
 
